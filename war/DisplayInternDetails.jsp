@@ -13,6 +13,10 @@ Intern Details
     
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
 	
+	<style>
+	#email:hover { width: 250px;
+	transition:width.6s ease;
+	 }	</style>
 </head>
 <body>
 
@@ -35,10 +39,9 @@ Intern Details
                 
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="Home.jsp" class="scroll-link">Home</a></li>
+                        <li><a href="Home.jsp" class="scroll-link">Home</a></li>
                         <li><a href="#validateadmin" class="scroll-link" data-toggle="modal">Admin</a></li>
-                        <li><a href="#displayemployee" data-toggle="modal" class="scroll-link">Employee</a></li>
-                        <li><a href="#displayintern" data-toggle="modal" class="scroll-link">Intern</a></li>
+                        
                         <li><a href="#aboutus" class="scroll-link">About Us</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
                     </ul>
@@ -47,83 +50,92 @@ Intern Details
         </div>
     </header>
     <br><br><br><br><br>
-<section id="aboutus" class="page-section secPad">
+
         <div class="container">
 
             <div class="row">
                 <div class="heading text-center">
                     <!-- Heading -->
- <center>Details of the Employee</center><br><br>
-<center>
-<table>
-<tr>
-<td>Employee Id: </td><td>${empid}</td></tr>
- <tr>
-<td>
-</td></tr>
-<tr>
-   <td>Name:</td><td>${name}  </td></tr>
- <tr>
-<td>
-</td><td></td></tr>
-<tr><td>
-<tr>
-   <td>Experince:</td><td>${exp}  </td></tr>
- <tr>
-<td>
-</td><td></td></tr>
-<tr><td>
-<tr>
-   <td>Salary:</td><td>  ${salary}</td></tr>
+ <center><h2>Details of the Intern</h2></center><br><br>
+<form method="post" class="form-inline" action="/addemployee" id="contactfrm" role="form">
+			
+			
+			 		
+                        <div class="form-group">
+                            <label for="internid">Intern ID</label>
+                            <div class="span4">
+                            <input type="text" class="form-control" name="internid" id="internid" value="${empid }" onfocus="this.blur()" readonly="readonly" >                 
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="internname">Intern Name</label>
+                            <div class="span8">
+                            <input type="text" class="form-control" name="internname" id="internname" value="${name}" onfocus="this.blur()" readonly="readonly">
+                        </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exp">Experince</label>
+                        <div class="span4">
+                            
+                            <input type="text" class="form-control" name="exp" id="exp" value="${exp}" disabled >
+                        </div></div>
+                       <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <div class="span8">
+                            
+                            <input type="text" class="form-control" name="phone" id="phone" value="${phone }" disabled >                 
+                        </div></div>
+                        <div class="form-group">
+                            <label for="salary">Salary</label>
+                            <div class="span8">
+                            
+                            <input type="text" class="form-control" name="salary" id="salary" value="${salary}" disabled>
+                        </div></div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="span8">
+                            
+                            <input type="email" class="form-control" width="80%" name="email" id="email" value="${email}" disabled>
+                        </div></div>
+                        <br><br>
+                    <div class="form-group">
+                            <label for="house">House No</label>
+                            <div class="span4">
+                            
+                            <input type="text" class="form-control" name="house" id="house" value="${house}" disabled>
+                        </div></div>
+                        <div class="form-group">
+                            <label for="street">Street</label>
+                            <div class="span8">
+                            
+                            <input type="text" class="form-control" name="street" id="street" value="${street}" disabled >
+                        </div></div>
+                    <div class="form-group">
+                            <label for="city">City</label>
+                            <div class="span4">
+                            
+                            <input type="text" class="form-control" name="city" id="city" value="${city}" disabled>
+                        </div></div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                           <div class="span8">
+                            
+                            <input type="text" class="form-control" name="state" id="state" value="${state}" disabled >
+                        </div></div>
+                    <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <div class="span6">
+                            
+                            <input type="text" class="form-control" name="pincode" id="pincode" value="${pincode}" disabled>
+                        </div></div>
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        
 
-   <tr>
-<td>
-</td><td></td></tr>
-<tr><td>
-<tr>
-   <td>Phone:</td><td> ${phone} </td></tr>
-<tr>
-<td>
-</td><td></td></tr>
-<tr><td>
-<tr>
-   <td>Email Id:</td><td> ${email} </td></tr>
-
-   <tr>
-<td>
-</td></tr>
-<tr>
-   <td>House Number :</td><td>  ${house}</td></tr>
-   <tr>
-<td>
-</td></tr>
-<tr>
-   <td>Street :</td><td>  ${street}</td></tr>
-   
-   <tr>
-<td>
-</td></tr>
-<tr>
-   <td>City:</td><td>  ${city}</td></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-   <td>Pincode:</td><td>  ${pincode}</td></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-   <td>State:</td><td>  ${state}</td></tr>
-
-   <tr>
-<td>
-</td></tr>
-</table>
-
-</section>
-
-
+<br><br><br><br>
 <section id="aboutus" class="page-section secPad">
         <div class="container">
 
@@ -136,6 +148,7 @@ Adaptavant is a high-energy environment driven by talented people passionate abo
 Change through Innovation
 We seek to change the world through innovation. Our team is open to new ideas with the potential to expand market share, improve profitability, or streamline oper- ations. Innovations in thought, products, and processes excite us. Flexibility enables our global management team to view challenges and opportunities from a fresh perspective.</p>
                 </div>
+            </div>
             </div>
 </section>
 
@@ -167,12 +180,13 @@ We seek to change the world through innovation. Our team is open to new ideas wi
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="comments">Comments</label>
-                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" required placeholder="Enter your message...." title="Please enter your message (at least 10 characters)"></textarea>
+                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" required placeholder="Enter your message...." title="Please enter your message (at least 10 characters)"></textarea> 
                         </div>
-                        <div class="result"></div>
+                        <a href="#success" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
+                 
+                       <div class="result"></div>
                     </div>
                 </form>
-                 <a href="#contact" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
                        
                 <div class="col-sm-4">
                     <h4>Address:</h4>
@@ -246,37 +260,26 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
            
         </div>
     </section>
-    <div class="modal fade" id="displayemployee" role="dialog">
+    		<div class="modal fade" id="success" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
 		
  
-			<div class="modal-header"><h4>Enter the employee id and name</h4></div>
-			<form method="post" action="/displayemployee" id="contactfrm" role="form">
+			<div class="modal-header"><h2>Thank You</h2></div>
 			
 			<div class="modal-body">
-			 
-                        <div class="form-group">
-                            <label for="empid">Employee Id</label>
-                            <input type="text" class="form-control" name="empid" id="empid" required placeholder="Enter Employee Id">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Employee Name</label>
-                            <input type="text" class="form-control" name="Empname" id="name" required placeholder="Enter Name" >
-                        </div>
-                    
-                        <div class="result"></div>
-                    </div>
-			<div class="modal-footer">
-		<button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
-                       
-				<a class ="btn btn-lg btn-primary" data-dismiss="modal">Clear</a>
+		    	<p>we Will be in contact if you need anything!!!!!!!!</p>
+                        			<div class="modal-footer">
+		               
+				<a class ="btn btn-lg btn-primary" data-dismiss="modal">ok</a>
 			</div>
-			</form>
+			
+		</div>
 		</div>
 		</div>
 		</div>
 		
+    		
 		<div class="modal fade" id="displayintern" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -288,8 +291,8 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
 			<div class="modal-body">
 			 
                         <div class="form-group">
-                            <label for="internid">Intern Id</label>
-                            <input type="text" class="form-control" name="internid" id="internid" required placeholder="Enter Intern Id">
+                            <label for="Internid">Intern Id</label>
+                            <input type="text" class="form-control" name="Internid" id="Internid" required placeholder="Enter Intern Id">
                         </div>
                         <div class="form-group">
                             <label for="name">Intern Name</label>

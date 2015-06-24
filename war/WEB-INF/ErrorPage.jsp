@@ -103,10 +103,11 @@ We seek to change the world through innovation. Our team is open to new ideas wi
                             <label for="comments">Comments</label>
                             <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" required placeholder="Enter your message...." title="Please enter your message (at least 10 characters)"></textarea>
                         </div>
+                        <a href="#success" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
+                 
                         <div class="result"></div>
                     </div>
                 </form>
-                 <a href="#contact" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
                        
                 <div class="col-sm-4">
                     <h4>Address:</h4>
@@ -180,37 +181,7 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
            
         </div>
     </section>
-    <div class="modal fade" id="displayemployee" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-		
- 
-			<div class="modal-header"><h4>Enter the employee id and name</h4></div>
-			<form method="post" action="/displayemployee" id="contactfrm" role="form">
-			
-			<div class="modal-body">
-			 
-                        <div class="form-group">
-                            <label for="empid">Employee Id</label>
-                            <input type="text" class="form-control" name="empid" id="empid" required placeholder="Enter Employee Id">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Employee Name</label>
-                            <input type="text" class="form-control" name="Empname" id="name" required placeholder="Enter Name" >
-                        </div>
-                    
-                        <div class="result"></div>
-                    </div>
-			<div class="modal-footer">
-		<button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
-                       
-				<a class ="btn btn-lg btn-primary" data-dismiss="modal">Clear</a>
-			</div>
-			</form>
-		</div>
-		</div>
-		</div>
-		
+    		
 		<div class="modal fade" id="displayintern" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -238,6 +209,24 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
 				<a class ="btn btn-lg btn-primary" data-dismiss="modal">Clear</a>
 			</div>
 			</form>
+		</div>
+		</div>
+		</div>
+		<div class="modal fade" id="success" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		
+ 
+			<div class="modal-header"><h2>Thank You</h2></div>
+			
+			<div class="modal-body">
+		    	<p>we Will be in contact if you need anything!!!!!!!!</p>
+                        			<div class="modal-footer">
+		               
+				<a class ="btn btn-lg btn-primary" data-dismiss="modal">ok</a>
+			</div>
+			
+		</div>
 		</div>
 		</div>
 		</div>

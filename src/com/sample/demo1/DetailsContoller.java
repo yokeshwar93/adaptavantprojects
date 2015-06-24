@@ -77,7 +77,7 @@ public ModelAndView validateAdmin(@RequestParam("name") String name,@RequestPara
 	}
 	else
 	{
-		model=new ModelAndView("Home");
+		model=new ModelAndView("ErrorAdmin");
 	}
 	}
 	catch(Exception e){

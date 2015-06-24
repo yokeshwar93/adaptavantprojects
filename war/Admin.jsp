@@ -131,7 +131,7 @@ We seek to change the world through innovation. Our team is open to new ideas wi
                             <label for="comments">Comments</label>
                             <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" required placeholder="Enter your message...." title="Please enter your message (at least 10 characters)"></textarea>
                         </div>
-                        <a href="#contact" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
+                        <a href="#success" data-toggle="modal"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button></a>
                         <div class="result"></div>
                     </div>
                 </form>
@@ -148,10 +148,9 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
                     </address>
                 </div>
             </div>
-        </div>
-        
+        </div>        
     </section>
-    			<div class="modal fade" id="displayintern" role="dialog">
+    <div class="modal fade" id="displayintern" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
 		
@@ -182,6 +181,7 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
 		</div>
 		</div>
 		</div>
+		
 		<div class="modal fade" id="addintern" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -279,15 +279,15 @@ Ascendas Phase 1, 4th Floor, Pinnacle Building, International Tech Park, Taram
 		<div class="modal-content">
 		
  
-			<div class="modal-header"><h2>Details Added</h2></div>
+			<div class="modal-header"><h2>Thank You</h2></div>
 			
 			<div class="modal-body">
-		    	<p>The details of the intern were added successfully!!!!!!!!</p>
+		    	<p>we Will be in contact if you need anything!!!!!!!!</p>
                         			<div class="modal-footer">
 		               
 				<a class ="btn btn-lg btn-primary" data-dismiss="modal">ok</a>
 			</div>
-			</form>
+			
 		</div>
 		</div>
 		</div>
